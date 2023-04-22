@@ -7,14 +7,20 @@ namespace Bakery.Tests
     public class BreadTests
     {
         [TestMethod]
-        public void BreadConstructor_DCreatesInstanceOfBread_Bread()
+        public void BreadConstructor_CreatesInstanceOfBread()
         {
-          Bread newBread = new Bread();
-          Assert.AreEqual(typeof(Bread), newBread.GetType());
-        }
-        [TestMethod]
-        public void CalculateCost_CalculateCostOfBread_int()
+            // Arrange
+            Bread newBread;
 
+            // Act
+            newBread = new Bread();
+
+            // Assert
+            Assert.IsNotNull(newBread);
+        }
+
+        [TestMethod]
+        public void CalculateCost_CalculatesCostOfBread()
         {
             // Arrange
             Bread newBread = new Bread();
@@ -22,10 +28,10 @@ namespace Bakery.Tests
             int expectedCost = 20;
 
             // Act
-            int actualCost = newBread.calculateCost(numBread);
+            int actualCost = newBread.CalculateCost(numBread);
 
             // Assert
-            Assert::AreEqual(expectedCost, actualCost);
+            Assert.AreEqual(expectedCost, actualCost);
         }
     }
 }
