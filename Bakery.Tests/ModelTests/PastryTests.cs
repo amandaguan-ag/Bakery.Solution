@@ -18,7 +18,7 @@ namespace Bakery.Tests
             // Arrange
             Pastry newPastry = new Pastry();
             int numPastry = 4;
-            int expectedCost = 7;
+            int expectedCost = 6;
 
             // Act
             int actualCost = newPastry.CalculateCost(numPastry);
