@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Bakery.Models;
 
 namespace Bakery.Tests
 {
@@ -6,15 +7,10 @@ namespace Bakery.Tests
     public class BreadTests
     {
         [TestMethod]
-        public void MethodName_DescriptionOfBehavior_ExpectedReturnValue()
+        public void BreadConstructor_DCreatesInstanceOfBread_Bread()
         {
-            // Any necessary logic to prep for test; instantiating new classes, etc.
-            // Example:
-            // ClassName newClassName = new ClassName();
-            // Act
-            // var result = newClassName.MethodName();
-            // Assert
-            // Assert.AreEqual(EXPECTED RESULT, result);
+          Bread newBread = new Bread();
+          Assert.AreEqual(typeof(Bread), newBread.GetType());
         }
     }
 }
