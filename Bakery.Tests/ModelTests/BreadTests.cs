@@ -12,5 +12,20 @@ namespace Bakery.Tests
           Bread newBread = new Bread();
           Assert.AreEqual(typeof(Bread), newBread.GetType());
         }
+        [TestMethod]
+        public void CalculateCost_CalculateCostOfBread_int()
+
+        {
+            // Arrange
+            Bread newBread = new Bread();
+            int numBread = 5;
+            int expectedCost = 20;
+
+            // Act
+            int actualCost = newBread.calculateCost(numBread);
+
+            // Assert
+            Assert::AreEqual(expectedCost, actualCost);
+        }
     }
 }
