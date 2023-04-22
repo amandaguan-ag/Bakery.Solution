@@ -7,20 +7,46 @@ namespace Bakery.Tests
     public class BreadTests
     {
         [TestMethod]
-        public void BreadConstructor_CreatesInstanceOfBread()
+        public void BreadConstructor_CreatesInstanceOfBread_Bread()
         {
             // Arrange
-            Bread newBread;
-
-            // Act
-            newBread = new Bread();
+            Bread newBread = new Bread();
 
             // Assert
             Assert.IsNotNull(newBread);
+            Assert.AreEqual(typeof(Bread), newBread.GetType());
         }
 
         [TestMethod]
-        public void CalculateCost_CalculatesCostOfBread()
+        public void GetPrice_ReturnsPrice_Int()
+        {
+            // Arrange
+            Bread newBread = new Bread();
+            int expectedPrice = 5;
+
+            // Act
+            int actualPrice = newBread.Price;
+
+            // Assert
+            Assert.AreEqual(expectedPrice, actualPrice);
+        }
+
+        [TestMethod]
+        public void GetDeal_ReturnsDeal_Int()
+        {
+            // Arrange
+            Bread newBread = new Bread();
+            int expectedDeal = 3;
+
+            // Act
+            int actualDeal = newBread.Deal;
+
+            // Assert
+            Assert.AreEqual(expectedDeal, actualDeal);
+        }
+
+        [TestMethod]
+        public void CalculateCost_CalculateCostOfBread_ReturnsCost()
         {
             // Arrange
             Bread newBread = new Bread();
