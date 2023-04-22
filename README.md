@@ -1,4 +1,4 @@
-# _Project Name_
+# _Pierre's Bakery_
 
 #### By _**Amanda Guan**_
 

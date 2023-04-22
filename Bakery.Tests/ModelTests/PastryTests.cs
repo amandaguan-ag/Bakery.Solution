@@ -1,9 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ProjectName.Tests
+namespace Bakery.Tests
 {
     [TestClass]
-    public class ClassNameTests
+    public class PastryTests
     {
         [TestMethod]
         public void MethodName_DescriptionOfBehavior_ExpectedReturnValue()
