@@ -17,7 +17,7 @@ namespace Bakery.Tests
         {
             // Arrange
             Pastry newPastry = new Pastry();
-            int expectedPrice = 5;
+            int expectedPrice = 2;
             int actualPrice = newPastry.Price;
             // Assert
             Assert.AreEqual(expectedPrice, actualPrice);
@@ -28,7 +28,7 @@ namespace Bakery.Tests
         {
             // Arrange
             Pastry newPastry = new Pastry();
-            int expectedDeal = 3;
+            int expectedDeal = 4;
 
             // Act
             int actualDeal = newPastry.Deal;

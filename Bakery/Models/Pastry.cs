@@ -1,19 +1,15 @@
+using System;
+
 namespace Bakery.Models
 {
     public class Pastry
     {
-        private int price_;
-        private int deal_;
-
-        public Pastry()
-        {
-            price_ = 2;
-            deal_ = 4;
-        }
+    public int Price { get; } = 2;
+    public int Deal { get; } = 4; 
 
         public int CalculateCost(int numPastry)
         {
-            int pastryCost = (numPastry / deal_) * (3 * price_) + (numPastry % deal_) * price_;
+            int pastryCost = (numPastry / Deal) * (3 * Price) + (numPastry % Deal) * Price;
             return pastryCost;
         }
     }
