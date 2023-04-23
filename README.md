@@ -4,7 +4,7 @@
 
 ## Description
 
-_nkjnjj mjh kjhbn_
+_The app has two classes, Bread and Pastry, and allows users to order and receive a cost estimate. The cost is calculated based on the number of items and any applicable deals. The application follows a pattern where every third loaf of bread or fourth pastry is free. All functionality for the business logic models is tested._
 
 ## link to Github Page
 
